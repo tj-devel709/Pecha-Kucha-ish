@@ -1,1 +1,0 @@
--v --force --timestamp=none --sign - --entitlements /Users/tjlambert/Projects/ToastmasterRapidFirePhotos/RapidFire/obj/Debug/net8.0-maccatalyst/maccatalyst-arm64/Entitlements.xcent /Users/tjlambert/Projects/ToastmasterRapidFirePhotos/RapidFire/bin/Debug/net8.0-maccatalyst/maccatalyst-arm64/RapidFire.app
