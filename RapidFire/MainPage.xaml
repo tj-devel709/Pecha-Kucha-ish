@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RapidFire.MainPage"
+                Title="Pecha Kucha-ish">
+
+    <Grid RowDefinitions="8*, 50, 50" Margin="15" RowSpacing="10">
+
+            <Image
+                Grid.Row="0"
+                x:Name="MainImage"
+                MaximumWidthRequest="800"
+                MaximumHeightRequest="800"
+                Aspect="AspectFit" />
+
+            <Label Text="Upon hitting start, you will see a random photo to speak on. Every 20 seconds, the photo will change and you can speak on the new photo. Good luck :)" 
+                FontSize="45" x:Name="InstructionsLabel" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" />
+
+            <Label FontSize="55" Text="20" x:Name="TimerLabel" VerticalTextAlignment="Start" HorizontalTextAlignment="End" />
+
+            <Button
+                Grid.Row="1"
+                x:Name="StartButton"
+                Text="Start" 
+                FontSize="Large"
+                Background="Green"
+                Clicked="OnStartClicked"
+                HorizontalOptions="Fill" />
+            <Button
+                Grid.Row="2"
+                x:Name="StopButton"
+                Text="Stop" 
+                Background="Red"
+                IsEnabled="False"
+                FontSize="Large"
+                Clicked="OnStopClicked"
+                HorizontalOptions="Fill" />
+    </Grid>
+
+</ContentPage>
